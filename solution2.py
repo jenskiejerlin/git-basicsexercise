@@ -1,5 +1,6 @@
 def LoopSolution(target):
     sum = 0
-	for i = 1 to target do
-		if (i mod 3 = 0) or (i mod 5 = 0) then sum := sum + i
-	return sum
+    for i in range(1, target+1):
+        if (i % 3 == 0) or (i % 5 == 0):
+            sum = sum + i
+    return sum
